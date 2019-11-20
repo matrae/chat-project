@@ -1,0 +1,133 @@
+body { 
+font-family: Arial, sans-serif; 
+line-height: 1.4;
+font-size: 12px;
+background: #000;
+margin: 0;
+padding: 0;
+color: #fefefe;
+}
+
+a { color: #FFDCAF; text-decoration: none;}
+a:hover { text-decoration: underline; }
+h1 { margin: 0; padding: 0; }
+h2 { margin: 0; padding: 0; }
+
+#wrap { 
+width: 800px;
+margin: 0 auto;
+background: #171717;
+}
+
+#header {
+height: 90px;
+background: url(images/header.jpg) no-repeat;
+}
+#header h1 {
+margin: 0;
+padding: 15px 0 0 10px;
+font-weight: 100;
+font-size: 25px;
+letter-spacing: -1px;
+color: #FFE3BF;
+}
+#header h1 a { text-decoration: none; color: #FFE3BF; }
+#header h1 a:hover { text-decoration: none; border-bottom: 1px solid #FFE3BF; }
+#header img {
+float: right;
+padding: 15px 10px 0 0;
+}
+
+#header h2 { padding: 0 0 0 10px; margin: 0; color: #eee; font-weight: 100; font-size: 17px; }
+
+#menu {
+background: url(images/menu.jpg) no-repeat;
+height: 40px;
+line-height: 30px;
+}
+
+#menu ul {
+list-style-type: none;
+margin: 0;
+padding-left: 10px;
+}
+#menu ul li {
+display: block;
+float: left;
+}
+#menu ul li a {
+display: block;
+padding: 0 10px 0 10px;
+text-decoration: none;
+color: #fff;
+font-size: 12px;
+font-weight: 600;
+}
+#menu ul li a:hover {
+color: #fff;
+background: url(images/menuover.png) repeat-x;
+}
+
+#contentwrap {
+background: url(images/content.jpg) repeat-y;
+padding: 0 0 0 10px;
+}
+
+#content {
+margin-top: 10px;
+float: left;
+width: 540px;
+}
+#content h2 {
+margin: 0;
+color: #FFDCAF;
+line-height: 30px;
+font-size: 17px;
+font-weight: 100;
+}
+
+#content p { padding: 0 0 5px 0; color: #fefefe;}
+#content ul li { padding: 0 0 5px 0; color: #fefefe;}
+#content ul { padding: 0 20px 10px 30px; }
+
+#sidebar {
+float: right;
+width: 220px;
+margin-top: 10px;
+}
+
+#sidebar h3 {
+background: url(images/sidebarh3.jpg) no-repeat;
+height: 30px;
+line-height: 30px;
+font-weight: 600;
+font-size: 12px;
+margin: 0; padding: 0 0 0 10px; 
+color: #fff;
+}
+
+#sidebar p { padding: 0 10px 10px 10px; color: #eee; }
+
+#sidebar ul {
+padding: 10px 0 25px 30px;
+margin: 0;
+list-style-type: circle;
+}
+
+#sidebar ul li {
+padding: 0;
+margin: 0;
+}
+
+#footer { 
+text-align: center;
+color: #fff;
+font-size: 12px;
+background: url(images/footer.jpg) no-repeat;
+height: 30px;
+line-height: 30px;
+margin-top: 10px;
+}
+#footer p { padding: 0; margin: 0; }
+#footer a { color: #fff; }
+#footer a:hover { text-decoration: underline; }

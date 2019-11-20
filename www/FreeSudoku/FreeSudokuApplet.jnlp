@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- JNLP File for FreeSudoku Programm --> 
+  <jnlp codebase="http://richards.kri.ch/FreeSudoku/" 
+  href="FreeSudokuApplet.jnlp"> 
+    <information> 
+       <title>FreeSudoku</title> 
+       <vendor>Kraan and Richards GmbH</vendor> 
+       <description>A free sudoku game</description> 
+       <description kind="short">A free sudoku game</description> 
+       <icon href="FreeSudoku.gif"/>
+       <offline-allowed/> 
+     </information> 
+     <resources> 
+       <j2se version="1.6"/> 
+       <jar href="FreeSudokuApplet.jar"/> 
+     </resources> 
+     <applet-desc main-class="org.gos.freesudoku.FreeSudokuApplet"
+     documentbase="http://richards.kri.ch/FreeSudoku/" name=FreeSudoku width=322 height=505 /> 
+</jnlp>

@@ -1,0 +1,9 @@
+Display goal for difficulty (how many seconds should it take to generate a block, on average).
+
+In MiningTask: Every X blocks, automatically adjust the difficulty level,
+based on how long blocks have been taking to generate. Look at the timestamps,
+calculate the actual time required, and adjust difficulty accordingly.
+Careful: if mining was paused for lack of work, the timestamps will make
+no sense for this purpose!
+
+Only enable the mining "start" button if payloadpool is not empty

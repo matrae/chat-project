@@ -1,0 +1,36 @@
+.label {
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: #808080;
+}
+
+.text-field {
+  -fx-font-weight: bold;
+  -fx-font-style: italic;
+  -fx-text-fill: #808080;
+  -fx-min-width: 50px;
+  -fx-max-width: 9999px;
+}
+
+.centered {
+	-fx-alignment: center;
+}
+
+#clock {
+  -fx-font-weight: bold;
+  -fx-text-fill: #000000;
+  -fx-max-width: 9999px;
+  -fx-max-height: 9999px;
+  -fx-alignment: center;
+}
+
+.menu .label {
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #800080;
+  -fx-border-width: 0px;
+}
+
+#root {
+  -fx-padding: 30px;	
+}

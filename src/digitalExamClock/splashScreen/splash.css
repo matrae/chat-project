@@ -1,0 +1,15 @@
+#splash{
+    -fx-background-image: url("splash_background.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 300 300;
+    -fx-background-position: center center;
+}
+
+.progress-bar > .bar {
+	-fx-background-color: green;
+}
+
+#progressbox  {
+	-fx-alignment: center;
+}

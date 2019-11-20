@@ -1,0 +1,28 @@
+Plans for chatbot that answers spam messages
+
+Follow the principles of the Jabberwocky example, but instead of frequency patterns on letters, create frequency patterns on words. The goal is to avoid any and all syntactic and semantic analysis, and proceed on a purely statistical basis.
+
+    • Words form a directed graph – each word points to other words that could follow it and words that could precede it, along with relative frequencies. This frequency is simply the number of occurrences derived from the training data.
+    • Some words are actually just placeholders, for example, for a quantity of money. So a phrase about winning money would not include a specific amount, but rather a placeholder.
+    • Sequences will be developed to fill in gaps, rather than from start-to-finish. So, for example, a reply might contain the start-tag, a money-tag and an end-tag. The algorithm would then fill in the two gaps start-money and money-end.
+        ◦ To fill in a gap: generate from both ends, stop when the two overlap by some amount.
+    • The initial template with gaps may be randomly generated, to include some number (1 or more) center tags, in some random order.
+    • The generation itself is random, so multiple replies may be generated for each template.
+    • A final selection process chooses the “best” reply, by some as yet unknown criteria. Maybe simply being short.
+
+Importantly, our goal is not to reproduce spam mail, but to reply to it. Hence, the training corpus differs from the inputs: if we want to reply to spam, we train not on spam, but on replies. Alternatively, of course, we could use this to generate anything at all...
+
+The application needs to be able to
+- Load/save training results (the directed graphs) from files.
+- Train from a set of input texts, structure currently unknown
+- Generate an individual reply to a mail pasted into the GUI, for testing purposes
+- Start a network service to receive and reply to messages sent to a specific port
+
+The steps in processing a message
+- Parse message to identify important tags (e.g., money amount)
+- Create a random set of potential reply templates, each containing start, end, and one or more tags from the incoming message
+- For each template, create a set of potential, specific replies
+- Analyse all generated replies, and choose one to use as a reply
+- Replace tags with content from original message
+- Complete start-tag and end-tag
+- Return finished reply
